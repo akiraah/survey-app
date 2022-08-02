@@ -2,9 +2,16 @@ import React from 'react'
 
 const FirstPage = () => {
   return (
-   <div className="question-container">
-       <h1>Test</h1>
-   </div>
+    <section className="question-section">
+      <div className="question-container">
+        <div className="question-card">
+          <h1>Test</h1>
+        </div>
+        <div className="answer-section">
+            <div className></div>
+        </div>
+      </div>
+    </section>
   )
 }
 

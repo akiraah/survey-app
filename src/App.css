@@ -21,6 +21,20 @@ section {
   background-color: #f6a333;
 }
 
+.question-section {
+  background-color: #f1f2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.question-card {
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
 .btn-primary {
   background: #fff;
   box-sizing: border-box;
@@ -29,7 +43,7 @@ section {
   display: flex;
   align-items: center;
   border-width: 0;
-  width: 25vh; 
+  width: 25vh;
   background-color: #fff;
   width: 160px;
   padding: 20px;
@@ -50,32 +64,27 @@ section {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: bold;
-
 }
-
-.btn:hover, .btn:focus, .btn:active{
+.btn:hover,
+.btn:focus,
+.btn:active {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.question-box {
-  background-color: #f1f2f3;
-
-}
-.question-section {
-  display:flex;
+/* .question-container {
+  background-color: red;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
+} */
 
 .choice-card {
   border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0,0,0,.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   box-sizing: border-box;
 }
@@ -88,4 +97,4 @@ section {
   padding-left: 10em;
   padding-right: 10em;
   padding-bottom: 5em;
-} 
+}
