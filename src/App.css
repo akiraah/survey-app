@@ -2,7 +2,6 @@ section {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@ section {
 .survey-logo {
   width: 50%;
   height: 10%;
+  align-self: center;
 }
 
 .one {
@@ -24,15 +24,48 @@ section {
 .question-section {
   background-color: #f1f2f3;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+
 }
+
+.question-container {
+  background-color: #f1f2f3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+}
+
 .question-card {
   width: 500px;
-  height: 250px;
+  height: 150px;
   border-radius: 10px;
   background-color: #fff;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: center
+}
+
+.question-card  h1 {
+  width: 10em;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex:1 1 auto; */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 15em;
+  height: 5em;
+  border-radius: 10px;
+  background-color: #fff;
+  
 }
 
 .btn-primary {
@@ -55,7 +88,12 @@ section {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  align-self: center;
+}
+
+.btn-primary.nav {
+  background-color: #f6a333;
 }
 
 .btn span {
@@ -76,25 +114,14 @@ section {
   transform: scale(1.1);
 }
 
-/* .question-container {
-  background-color: red;
-  display: flex;
-  justify-content: center;
-} */
-
-.choice-card {
-  border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  box-sizing: border-box;
-}
-
 .button-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
-  padding-bottom: 5em;
+  justify-content: space-evenly;
+}
+
+.open-answer {
+  width: 100em;
+  border-radius: 6px;
+  height: 2em;
 }
