@@ -1,19 +1,16 @@
-import './App.css';
-import logo from './resource/ziggo-logo.svg'
+import React from 'react'
+import { useRoutes } from 'react-router-dom'
+import './App.css'
+import Home from './pages/Home'
+import FirstPage from './pages/FirstPage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <section className="one">
-        <img src={logo} className="survey-logo" alt="logo" />
-      </section>
-      <section className="two">
-        <h1>Two</h1>
-      </section>
-    </div>
-  );
+const App = () => {
+  const element = useRoutes([
+    { path: '/', element: <Home /> },
+    { path: '/survey-app', element: <Home /> },
+    { path: '/question-one', element: <FirstPage /> },
+  ])
+  return element
 }
 
-export default App;
+export default App
