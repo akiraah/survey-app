@@ -11,8 +11,8 @@ const FirstPage = () => {
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value)
-  }  
-  
+  }
+
   const controlProps = (item) => {
     return {
       // onClick: () => setActive(true),
@@ -25,18 +25,27 @@ const FirstPage = () => {
   }
 
   return (
+    <>
     <section className="flex flex-col bg-[#f1f2f3] h-screen w-screen justify-evenly">
       <div className="flex flex-col self-center gap-y-28">
         <div className="self-center container h-40 w-80 p-12 rounded-3xl border-2 border-orange-400 bg-white drop-shadow-xl">
           <h1 className="leading-8 font-sans">A random question...</h1>
         </div>
-        <div className="container flex flex-row sm:flex-wrap justify-evenly gap-14">
-          <MultipleChoiceAnswer
-            answer={'Test answer 1'}
-            radioButtonComponent={
+        <div className="container flex flex-row justify-evenly gap-14 sm:gap-4">
+          <div className="card">
+            <input
+              checked={controlProps('b').checked}
+              type="radio"
+              className="peer"
+              hidden
+            />
+            <div
+              className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
+            >
+              <p className={'text-center'}>lorem ipsum</p>
               <Radio
-                className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
-                {...controlProps('e')}
+                className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer peer"
+                {...controlProps('b')}
                 sx={{
                   color: grey[400],
                   '&.Mui-checked': {
@@ -44,9 +53,44 @@ const FirstPage = () => {
                   },
                 }}
               />
-            }
-          />
-          <MultipleChoiceAnswer answer={'Test answer 2'} isActive={isActive} radioButtonComponent={
+            </div>
+          </div>
+
+          <div className="card">
+            <input
+              checked={controlProps('c').checked}
+              type="radio"
+              className="peer"
+              hidden
+            />
+            <div
+              className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
+            >
+              <p className={'text-center'}>lorem ipsum</p>
+              <Radio
+                className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
+                {...controlProps('c')}
+                sx={{
+                  color: grey[400],
+                  '&.Mui-checked': {
+                    color: orange[600],
+                  },
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="card">
+            <input
+              checked={controlProps('d').checked}
+              type="radio"
+              className="peer"
+              hidden
+            />
+            <div
+              className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
+            >
+              <p className={'text-center'}>lorem ipsum</p>
               <Radio
                 className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
                 {...controlProps('d')}
@@ -57,12 +101,36 @@ const FirstPage = () => {
                   },
                 }}
               />
-            } />
-          <MultipleChoiceAnswer answer={'Test answer 3 '} buttonId={3} />
-          <MultipleChoiceAnswer answer={'Test answer 4'} buttonId={4} />
+            </div>
+          </div>
+
+          <div className="card">
+            <input
+              checked={controlProps('e').checked}
+              type="radio"
+              className="peer"
+              hidden
+            />
+            <div
+              className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
+            >
+              <p className={'text-center'}>lorem ipsum</p>
+              <Radio
+                className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
+                {...controlProps('e')}
+                sx={{
+                  color: grey[400],
+                  '&.Mui-checked': {
+                    color: orange[600],
+                  },
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="button-container">
+    </section>
+    <div className="flex flex-row justify-center gap-72">
         <button className="btn btn-primary nav" onClick={() => navigate('/')}>
           <span className="btn-title">Back</span>
         </button>
@@ -73,7 +141,7 @@ const FirstPage = () => {
           <span className="btn-title">Next</span>
         </button>
       </div>
-    </section>
+    </>
   )
 }
 

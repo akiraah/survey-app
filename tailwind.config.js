@@ -4,8 +4,6 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     screens: {
-      'ipad-vl': { raw: '(min-width: 768px),(max-width:1080px)' },
-      'ipad-hl': { raw: '(min-width: 768px),(max-width:1080px)' },
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
       'md': '768px',
