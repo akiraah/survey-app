@@ -126,10 +126,10 @@ const FirstPage = () => {
           </div>
         </div>
       </section>
-      <div className="flex flex-row justify-center gap-96 bg-[#f1f2f3]">
+      <div className="flex flex-row justify-center gap-96 p-12 bg-[#f1f2f3] ml-2">
           <button
             type="button"
-            className="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
+            className="inline-block px-6 py-2.5 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded-3xl shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
             onClick={() => navigate('/')}
           >
             <span className="btn-title">Back</span>
