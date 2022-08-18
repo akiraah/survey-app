@@ -1,11 +1,9 @@
 import { grey, orange } from '@mui/material/colors'
 import Radio from '@mui/material/Radio'
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import MultipleChoiceAnswer from '../components/MultipleChoiceAnswer'
+import React, { useState } from 'react'
+import Navigation from '../components/Navigation'
 
 const FirstPage = () => {
-  const navigate = useNavigate()
   const [selectedValue, setSelectedValue] = useState('a')
 
   const handleChange = (event) => {
@@ -25,7 +23,7 @@ const FirstPage = () => {
       <section className="flex flex-col bg-[#f1f2f3] h-screen w-screen justify-evenly">
         <div className="flex flex-col self-center gap-y-28">
           <div className="self-center container h-40 w-80 p-12 rounded-3xl border-2 border-orange-400 bg-white drop-shadow-xl">
-            <h1 className="leading-8 font-sans">A random question...</h1>
+            <h1 className={'text-center font-sans'}>A random question...</h1>
           </div>
           <div className="container flex flex-row justify-evenly gap-14 sm:gap-4">
             <div className="card">
@@ -126,25 +124,9 @@ const FirstPage = () => {
           </div>
         </div>
       </section>
-      <div className="flex flex-row justify-center gap-96 p-12 bg-[#f1f2f3] ml-2">
-          <button
-            type="button"
-            className="inline-block px-6 py-2.5 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded-3xl shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
-            onClick={() => navigate('/')}
-          >
-            <span className="btn-title">Back</span>
-          </button>
-          <button
-            className="btn btn-primary nav"
-            onClick={() => navigate('/question-two')}
-          >
-            <span className="btn-title">Next</span>
-          </button>
-        </div>
+      <Navigation back={''} forward={'question-two'} />
     </>
   )
 }
 
 export default FirstPage
-
-// style="font-size: 23px;line-height: 41px;font-style: italic;letter-spacing: 0.102em;font-weight: 400;"
