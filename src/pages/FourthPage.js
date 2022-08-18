@@ -23,7 +23,7 @@ const FirstPage = () => {
       <section className="flex flex-col bg-[#f1f2f3] h-screen w-screen justify-evenly">
         <div className="flex flex-col self-center gap-y-28">
           <div className="self-center container h-40 w-80 p-12 rounded-3xl border-2 border-orange-400 bg-white drop-shadow-xl">
-            <h1 className={'text-center font-sans'}>1st question...</h1>
+            <h1 className={'text-center font-sans'}>4th question...</h1>
           </div>
           <div className="container flex flex-row justify-evenly gap-14 sm:gap-4">
             <div className="card">
@@ -124,7 +124,7 @@ const FirstPage = () => {
           </div>
         </div>
       </section>
-      <Navigation back={''} forward={'2'} />
+      <Navigation back={'3'} forward={'5'} />
     </>
   )
 }
