@@ -25,100 +25,18 @@ const FirstPage = () => {
           <div className="self-center container h-40 w-80 p-12 rounded-3xl border-2 border-orange-400 bg-white drop-shadow-xl">
             <h1 className={'text-center font-sans'}>7th question...</h1>
           </div>
-          <div className="container flex flex-row justify-evenly gap-14 sm:gap-4">
+          <div className="container mx-auto flex flex-row justify-evenly">
             <div className="card">
-              <input
+              {/* <input
                 checked={controlProps('b').checked}
-                type="radio"
+                type="text"
                 className="peer"
                 hidden
-              />
+              /> */}
               <div
-                className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
+                className={`w-96 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
               >
                 <p className={'text-center'}>lorem ipsum</p>
-                <Radio
-                  className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer peer"
-                  {...controlProps('b')}
-                  sx={{
-                    color: grey[400],
-                    '&.Mui-checked': {
-                      color: orange[600],
-                    },
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="card">
-              <input
-                checked={controlProps('c').checked}
-                type="radio"
-                className="peer"
-                hidden
-              />
-              <div
-                className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
-              >
-                <p className={'text-center'}>lorem ipsum</p>
-                <Radio
-                  className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
-                  {...controlProps('c')}
-                  sx={{
-                    color: grey[400],
-                    '&.Mui-checked': {
-                      color: orange[600],
-                    },
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="card">
-              <input
-                checked={controlProps('d').checked}
-                type="radio"
-                className="peer"
-                hidden
-              />
-              <div
-                className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
-              >
-                <p className={'text-center'}>lorem ipsum</p>
-                <Radio
-                  className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
-                  {...controlProps('d')}
-                  sx={{
-                    color: grey[400],
-                    '&.Mui-checked': {
-                      color: orange[600],
-                    },
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="card">
-              <input
-                checked={controlProps('e').checked}
-                type="radio"
-                className="peer"
-                hidden
-              />
-              <div
-                className={`container flex flex-col w-40 h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer border-2 hover:border-blue-400 peer-checked:border-orange-400`}
-              >
-                <p className={'text-center'}>lorem ipsum</p>
-                <Radio
-                  className="self-end px-5 py-3 bg-center bg-contain float-left mr-2 cursor-pointer"
-                  {...controlProps('e')}
-                  sx={{
-                    color: grey[400],
-                    '&.Mui-checked': {
-                      color: orange[600],
-                    },
-                  }}
-                />
               </div>
             </div>
           </div>
