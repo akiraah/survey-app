@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/survey-app/static/css/main.4807be41.css",
-    "main.js": "/survey-app/static/js/main.1cf179fa.js",
+    "main.css": "/survey-app/static/css/main.46283266.css",
+    "main.js": "/survey-app/static/js/main.fadfe246.js",
     "static/js/787.a2c02b2c.chunk.js": "/survey-app/static/js/787.a2c02b2c.chunk.js",
     "static/media/ziggo-logo.svg": "/survey-app/static/media/ziggo-logo.b9bd0e23e78f8286146c7f8ae49dd5f1.svg",
     "index.html": "/survey-app/index.html",
-    "main.4807be41.css.map": "/survey-app/static/css/main.4807be41.css.map",
-    "main.1cf179fa.js.map": "/survey-app/static/js/main.1cf179fa.js.map",
+    "main.46283266.css.map": "/survey-app/static/css/main.46283266.css.map",
+    "main.fadfe246.js.map": "/survey-app/static/js/main.fadfe246.js.map",
     "787.a2c02b2c.chunk.js.map": "/survey-app/static/js/787.a2c02b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4807be41.css",
-    "static/js/main.1cf179fa.js"
+    "static/css/main.46283266.css",
+    "static/js/main.fadfe246.js"
   ]
 }
