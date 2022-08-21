@@ -14,6 +14,7 @@ import SeventhPage from './pages/SeventhPage'
 import EightPage from './pages/EightPage'
 import NinthPage from './pages/NinthPage'
 import TenthPage from './pages/TenthPage'
+import Results from './pages/Results'
 
 const App = () =>
   useRoutes([
@@ -29,7 +30,7 @@ const App = () =>
     { path: '/8', element: <EightPage /> },
     { path: '/9', element: <NinthPage /> },
     { path: '/10', element: <TenthPage /> },
-    // { path: '/results', element: <SecondPage /> },
+    { path: '/results', element: <Results /> },
   ])
 
 export default App

@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
 const NavButton = ({ navUrl, direction }) => {
-  console.log(navUrl, direction)
   const navigate = useNavigate()
   return (
     <button

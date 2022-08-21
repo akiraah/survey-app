@@ -1,10 +1,12 @@
 import { grey, orange } from '@mui/material/colors'
 import Radio from '@mui/material/Radio'
 import React, { useState } from 'react'
-import Navigation from '../components/Navigation'
+import NavButton from '../components/NavButton'
+import { useNavigate } from 'react-router-dom'
 
-const FirstPage = () => {
+const TenthPage = () => {
   const [selectedValue, setSelectedValue] = useState('a')
+  const navigate = useNavigate()
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value)
@@ -124,9 +126,18 @@ const FirstPage = () => {
           </div>
         </div>
       </section>
-      <Navigation back={'9'} forward={'results'} />
+      <div className="flex flex-row justify-center gap-96 p-12 bg-[#f1f2f3] ml-2">
+        <NavButton direction={'back'} navUrl={'9'} />
+        <button
+          type="button"
+          className="inline-block px-6 py-2.5 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded-3xl shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
+          onClick={() => navigate('/results')}
+        >
+          <p>Finish</p>
+        </button>
+      </div>
     </>
   )
 }
 
-export default FirstPage
+export default TenthPage

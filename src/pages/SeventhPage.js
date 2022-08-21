@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
 import Navigation from '../components/Navigation'
+import OpenEndedQuestionField from '../components/OpenEndedQuestionField'
 
-const FirstPage = () => {
-  const [selectedValue, setSelectedValue] = useState('')
+const SeventhPage = () => {
   return (
     <>
       <section className="flex flex-col py-4 bg-[#f1f2f3] h-screen w-screen justify-evenly">
@@ -14,13 +13,7 @@ const FirstPage = () => {
             <div
               className={`w-96 flex justify-center items-center h-20 p-2 rounded-xl bg-white drop-shadow-xl cursor-pointer`}
             >
-              <input
-                className={'h-full w-full text-center focus:outline-none'}
-                type="text"
-                placeholder="Please enter your answer here."
-                value={selectedValue}
-                onChange={(e) => setSelectedValue(e.target.value)}
-              ></input>
+              <OpenEndedQuestionField />
             </div>
           </div>
         </div>
@@ -30,4 +23,4 @@ const FirstPage = () => {
   )
 }
 
-export default FirstPage
+export default SeventhPage
