@@ -19,7 +19,7 @@ import Results from './pages/Results'
 const App = () =>
   useRoutes([
     { path: '/', element: <Home /> },
-    { path: '/survey-app', element: <Home /> },
+    // { path: '/survey-app', element: <Home /> },
     { path: '/1', element: <FirstPage /> },
     { path: '/2', element: <SecondPage /> },
     { path: '/3', element: <ThirdPage /> },
