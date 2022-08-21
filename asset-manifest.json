@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/survey-app/static/css/main.08972ada.css",
-    "main.js": "/survey-app/static/js/main.e666b003.js",
+    "main.js": "/survey-app/static/js/main.0b46a8ee.js",
     "static/js/787.a2c02b2c.chunk.js": "/survey-app/static/js/787.a2c02b2c.chunk.js",
     "static/media/ziggo-speed-meter.gif": "/survey-app/static/media/ziggo-speed-meter.4746a7f1d61ed92ce375.gif",
     "static/media/ziggo-logo.svg": "/survey-app/static/media/ziggo-logo.b9bd0e23e78f8286146c7f8ae49dd5f1.svg",
     "index.html": "/survey-app/index.html",
     "main.08972ada.css.map": "/survey-app/static/css/main.08972ada.css.map",
-    "main.e666b003.js.map": "/survey-app/static/js/main.e666b003.js.map",
+    "main.0b46a8ee.js.map": "/survey-app/static/js/main.0b46a8ee.js.map",
     "787.a2c02b2c.chunk.js.map": "/survey-app/static/js/787.a2c02b2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08972ada.css",
-    "static/js/main.e666b003.js"
+    "static/js/main.0b46a8ee.js"
   ]
 }
