@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/survey-app/static/css/main.46283266.css",
-    "main.js": "/survey-app/static/js/main.fadfe246.js",
+    "main.css": "/survey-app/static/css/main.08972ada.css",
+    "main.js": "/survey-app/static/js/main.e666b003.js",
     "static/js/787.a2c02b2c.chunk.js": "/survey-app/static/js/787.a2c02b2c.chunk.js",
+    "static/media/ziggo-speed-meter.gif": "/survey-app/static/media/ziggo-speed-meter.4746a7f1d61ed92ce375.gif",
     "static/media/ziggo-logo.svg": "/survey-app/static/media/ziggo-logo.b9bd0e23e78f8286146c7f8ae49dd5f1.svg",
     "index.html": "/survey-app/index.html",
-    "main.46283266.css.map": "/survey-app/static/css/main.46283266.css.map",
-    "main.fadfe246.js.map": "/survey-app/static/js/main.fadfe246.js.map",
+    "main.08972ada.css.map": "/survey-app/static/css/main.08972ada.css.map",
+    "main.e666b003.js.map": "/survey-app/static/js/main.e666b003.js.map",
     "787.a2c02b2c.chunk.js.map": "/survey-app/static/js/787.a2c02b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46283266.css",
-    "static/js/main.fadfe246.js"
+    "static/css/main.08972ada.css",
+    "static/js/main.e666b003.js"
   ]
 }
